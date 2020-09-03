@@ -14,14 +14,14 @@ const createRender = render => ({ input, label, type, meta, ...rest }) => (
     </div>
 );
 
-const RenderInput = createRender((input, label, type) =>
+const RenderInput = createRender ((input, label, type) =>
     <>
         <Form.Label>{label}</Form.Label>
         <Form.Control {...input} placeholder={label} type={type}/>
     </>
 );
 
-const RenderSelect = createRender((input, label, { children }) =>
+const RenderSelect = createRender ((input, label, { children }) =>
     <>
         <Form.Label>{label}</Form.Label>
         <Form.Control {...input} as="select" >
@@ -74,7 +74,7 @@ let ContactForm = ({ handleSubmit, submitting }) => {
 };
 
 ContactForm = reduxForm({
-    form: 'contact',
+    form: "contact",
     destroyOnUnmount: false,
     validate
 })(ContactForm);
