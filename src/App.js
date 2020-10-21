@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import { FormikForm, WrapperForm, Grid } from "./components/index";
+import { FormikForm, WrapperForm, Grid, GitHubUser } from "./components/index";
 import ContactForm from "../src/components/ReduxForm"
 
 const App = () => {
@@ -12,6 +12,7 @@ const App = () => {
                 <Route path='/redux_form' component={ContactForm}/>
                 <Route path='/formik' component={FormikForm}/>
                 <Route path='/grid' component={Grid}/>
+                <Route path='/github' component={GitHubUser}/>
             </Switch>
         </Router>
     );

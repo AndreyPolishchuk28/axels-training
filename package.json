@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
     "ag-grid-community": "^23.2.1",
     "ag-grid-enterprise": "^23.2.1",
     "ag-grid-react": "^23.2.1",
@@ -15,6 +16,7 @@
     "react-scripts": "^3.4.3",
     "redux": "^4.0.5",
     "redux-form": "^8.2.6",
+    "rxjs": "^6.6.3",
     "sane-email-validation": "^3.0.1",
     "styled-components": "^5.1.1",
     "yup": "^0.29.3"
